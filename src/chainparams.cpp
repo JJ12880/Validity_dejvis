@@ -295,8 +295,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("000072e428a5f5dc3173fc27a5ccd85c9dab13961a7d08140069149201b91150"));
         assert(genesis.hashMerkleRoot == uint256S("a69d8e54d668f46f264526c5c3c96ff5b8211a9a5f03f4cc9b1e868315ace6d7"));
 
-        vFixedSeeds.clear();
-        vSeeds.clear();
+        // Keep configured testnet bootstrap peers (if any are provided).
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
