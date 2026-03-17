@@ -263,10 +263,15 @@ public:
         consensus.nProtocolV1RetargetingFixedTime = 1395631999;
         consensus.nProtocolV2Time = 1407053625;
         consensus.nProtocolV3Time = 1444028400;
+        consensus.AvgFeeProtocolTime = 0;
+        consensus.nAvgFeeStartBlock = 20161;
+        consensus.nAvgFeeStartBlockRevert = 20161;
+        consensus.nAvgFeeStartBlockV2 = 20161;
         consensus.nLastPOWBlock = 20160;
         consensus.nStakeTimestampMask = 0xf;
         consensus.nCoinbaseMaturity = 60;
         consensus.nStakeMinAge = 6 * 60 * 60;
+        consensus.DEV_FUND_BLOCK_HEIGHT = 20161;
 
         pchMessageStart[0] = 0xcd;
         pchMessageStart[1] = 0xf2;
